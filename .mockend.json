@@ -1,12 +1,12 @@
 {
   "Post": {
-    "title": { "title": "json-server" },
+     "title": "json-server" ,
     "comments": {
       "hasMany": "Comment"
     }
   },
   "Comment": {
-    "body": {  "author": "das" },
+    "body":  "das" ,
     "post": {
       "belongsTo": "Post"
     }
