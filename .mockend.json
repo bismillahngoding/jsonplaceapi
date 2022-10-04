@@ -1,14 +1,39 @@
 {
-  "Post": {
-    "title": { "string": {} },
-    "comments": {
-      "hasMany": "Comment"
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "ZX",
+      "author": "das",
+      "id": 2
+    },
+    {
+      "title": "sdf",
+      "author": "das",
+      "id": 3
+    },
+    {
+      "title": "ok sip",
+      "author": "das",
+      "id": 4
+    },
+    {
+      "title": "mantap",
+      "author": "das",
+      "id": 5
     }
-  },
-  "Comment": {
-    "body": { "string": {} },
-    "post": {
-      "belongsTo": "Post"
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
     }
+  ],
+  "profile": {
+    "name": "typicode"
   }
 }
