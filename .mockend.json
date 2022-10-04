@@ -1,8 +1,7 @@
 {
   "Post": {
     "title": { "string":  [
-      "Thor",
-      "Loki"
+      "Thor"
     ] },
     "comments": {
       "hasMany": "Comment"
@@ -10,8 +9,7 @@
   },
   "Comment": {
     "body": { "string": [
-      "Thor",
-      "Loki"
+      "Thor"
     ]  },
     "post": {
       "belongsTo": "Post"
