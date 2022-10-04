@@ -1,12 +1,12 @@
 {
   "Post": {
-    "title": { "string": "sasa" },
+    "title": { "string": {} },
     "comments": {
       "hasMany": "Comment"
     }
   },
   "Comment": {
-    "body": { "string": "sssdy"},
+    "body": { "string": {} },
     "post": {
       "belongsTo": "Post"
     }
