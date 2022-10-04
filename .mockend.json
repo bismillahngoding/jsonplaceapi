@@ -1,39 +1,14 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "title": "ZX",
-      "author": "das",
-      "id": 2
-    },
-    {
-      "title": "sdf",
-      "author": "das",
-      "id": 3
-    },
-    {
-      "title": "ok sip",
-      "author": "das",
-      "id": 4
-    },
-    {
-      "title": "mantap",
-      "author": "das",
-      "id": 5
+  "Post": {
+    "title": { "title": "json-server" },
+    "comments": {
+      "hasMany": "Comment"
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+  },
+  "Comment": {
+    "body": {  "author": "das" },
+    "post": {
+      "belongsTo": "Post"
     }
-  ],
-  "profile": {
-    "name": "typicode"
   }
 }
